@@ -11,18 +11,26 @@ Note:
 use nested if-else-if-else
 */
 
-var score = 95;
+var score = 55;
 
-if (score > 80){
-    console.log("go for a lunch")
-}
-else if (score >= 60){
-    console.log("Good luck next time")
-}
-else if (score >= 40){
-    console.log("keep your friend's message unseen.")
+if (score < 80){
+    console.log("go to home and sleep and act sad.")
 }
 else {
-    
-    console.log("Block your friend")
-}
+    if (score > 80){
+        console.log("go for a lunch.")
+    }
+    else {
+        if (score >= 60){
+            console.log("good luck next time.")
+        }
+        else {
+            if (score >= 40) {
+                console.log("block your friend.")
+            }
+            else{
+                console.log("block your friend.")
+            }
+        }
+    }
+};
