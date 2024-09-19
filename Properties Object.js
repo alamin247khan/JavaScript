@@ -6,4 +6,4 @@ const computer = {
 }
 
 const keys = Object.keys(computer);
-console.log(keys)
+console.log(keys);
