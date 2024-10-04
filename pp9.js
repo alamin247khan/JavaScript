@@ -5,4 +5,7 @@ function doubleIt(num){
 }
 
 const result = numbers.map(doubleIt);
-console.log(result)
+console.log(result);
+const  fiveBonus = numbers.map(num => num / 2);
+console.log(fiveBonus);
+
