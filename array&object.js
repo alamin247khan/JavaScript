@@ -1,21 +1,28 @@
-const products = [
-    {id: 1, name: 'lenovo', price: 65000},
-    {id: 2, name: 'dell', price: 45000},
-    {id: 3, name: 'hp', price: 40000},
-    {id: 4, name: 'mac', price: 15000},
-]
-const names = products.map(product => product.name);
-console.log(names);
-const prices = products.map(p => p.price);
-console.log(prices);
-const total = products.reduce((acum, current) => acum + current.price , 0);
-console.log(total);
+const friends = [{a:2, b:3}, {a:4, b:5}, {a:4, b:5, c:6}, {a:2, b:3}, {a:4, b:5}, {a:4, b:5, c:6}, {a:2, b:3}, {a:4, b:5}, {a:4, b:5, c:6}]
+console.table(friends)
+console.log(friends);
 
-class product{
-    country = 'Bangladesh';
-    speak(talk){
-        console.log(`talking about ${talk}`)
+let student = {
+    2222: {
+        name: "Jack",
+        section: "C",
+        class: "IX",
+        address: {
+            "building no": 12,
+            "street": "St. Jonson",
+            "City": "Petersburg",
+            "Country": "UK"
+        }
+    }
+    3333: {
+        name: "Herry",
+        section: "D",
+        class: "X",
+        address: {
+            "building no": 85,
+            "street": "DC road",
+            "city": "Kachukhet",
+            "country": "Bangladesh",
+        }
     }
 }
-const lenovo = new product()
-console.log(lenovo);
